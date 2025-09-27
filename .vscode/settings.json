@@ -1,4 +1,13 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:system",
-    "python-envs.pythonProjects": []
+    "python-envs.pythonProjects": [],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:scaler-backend}/first_django_pro/db.sqlite3",
+            "name": "DjangoDB"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }
