@@ -1,0 +1,58 @@
+1.      Create Virtual Environnment : 
+                python -m venv "Virtual Environnment Name"
+
+2.      Activate Virtual Environnment :
+                "Virtual Environnment Name"\Scripts\Activate
+
+3.      Install required Packages :
+                pip Install "Packages-name"
+
+4.      To start a Django Project :
+                djando-admin startproject "Project Name"
+
+5.      Add the sub-project-name to Installed Apps in the prject.settings.py so that the changes in future can run from main django Project 
+                Ex : Adding "Products project" to the settings.py in the "ecommerce Project"
+
+-------------------------------------------  VIEWS  ------------------------------------------------------------------------------------------
+
+        -> In Django, a view is a Python function or class that takes a web request and returns a web response. 
+           It is a core component of Django's Model-Template-View (MTV) architecture, 
+           acting as the "middleman" that processes user requests and interacts with the models (for data) and 
+           templates (for presentation) to generate the final response. 
+        
+
+        -> Here are the key aspects of a Django view:
+                
+                Request Handling:
+                        Views receive an HttpRequest object as an argument, 
+                        which contains information about the incoming request (e.g., URL parameters, form data, user session).
+                
+                Business Logic:
+                        Views encapsulate the logic required to fulfill the request. 
+                        This can involve fetching data from the database using Django models, performing calculations, processing form submissions, or interacting with external services.
+                
+                Response Generation:
+                        Views are responsible for returning an HttpResponse object. This response can take various forms, including:
+                                HTML content rendered from a template.
+                                A redirect to another URL.
+                                A 404 Not Found or other error page.
+                                An XML document or JSON data (common in API development).
+                                An image or other file.
+
+
+6.      We can write the actual code in the "Views" , then add the function to urls in the main project.urls.py
+
+7.      To run the code written in the Views :
+                python manage.py runserver
+        In other terminal :
+                curl.exe -X "GET/POST/DELETE/ANY RESPONSE" "HTTP GOT IN TERMINAL 1"/sub-project/function-name_or_parameter -H "Content-Type: application/output_response(json/reddis.anything)
+
+        We have to import the required library Packages to avoid the errors.
+
+-------------------------------------------  MODELS  ------------------------------------------------------------------------------------------
+
+        In Django, models are Python classes that define the structure of your application's data and 
+        how it interacts with the database. They are the "M" in Django's MVT (Model-View-Template) architectural pattern.
+
+8.      
+
