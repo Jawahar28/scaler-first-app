@@ -12,5 +12,5 @@ def HellowView(request):
 
 def HelloName(request, name):
     p = Product.objects.all()
-    print(p)
+    print(p[0].name)
     return JsonResponse({'Hello' : name})
